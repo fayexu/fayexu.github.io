@@ -1,6 +1,6 @@
 div#wrapper {
 	margin: auto;
-	width: 800px;
+	width: 900px;
 }
 
 * {
@@ -116,7 +116,7 @@ div.section_title {
 }
 
 .author {
-  color: #e7d417;
+  color: #383b42;
 }
 
 .award {
