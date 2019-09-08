@@ -1,28 +1,64 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Juan (Fei) Xu</title>
-	</head>
-	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about">About</a></li>
-        		<li><a href="/cv">CV</a></li>
-        		<li><a href="/blog">Blog</a></li>
-    		</ul>
-		</nav>
-		<div class="container">
-    		<div class="blurb">
-        		<h1>Hi there, I'm Fei!</h1>
-				<p>I'm .... <em> .... </em>..... <a href="/about">Read more about my life...</a></p>
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
-		<footer>
-    		<ul>
-        		<li><a href="mailto:feixu.shucheng@gmail.com">email</a></li>
-        		<li><a href="https://github.com/feix">github.com/feix</a></li>
-			</ul>
-		</footer>
-	</body>
-</html>
+<head>
+	<link href="style/my.css" rel="stylesheet" type="text/css" />
+	<title>Juan (Fei) Xu</title>
+	<script>
+	function copy(dest, source) {
+  		if(dest.source == source) {
+  		  dest.innerHTML = "";
+  		  dest.source = null;
+  		}
+  		else {
+  		  dest.innerHTML = source.innerHTML;
+  		  dest.source = source;
+  		}
+  		dest.blur();
+	}
+	</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script> 
+    $(function(){
+      $("#includepubs").load("publication.html"); 
+    });
+    </script>
+</head>
+
+<body>
+
+<div id="wrapper">
+
+
+<!-- header info -->
+<div id="header">
+<div id="profile">
+	<img src="figures/me18-hi.JPG" height=250>
+</div>
+<div id="contact">
+	<br>
+	New York University, New York City <br>
+  <p><font face="courier">feixu.shucheng@gmail.com</font></p>
+  <p>
+  [<a href="docs/cv/CV-XU.pdf">CV</a>]
+  [<a href="https://scholar.google.com/citations?view_op=list_works&hl=en&user=KPZ6bfYAAAAJ"><font size="3">Google Scholar</font></a>]
+  </p>
+	<br>
+  
+</div>
+</div>
+
+<!-- main content -->
+<div id="content">
+<div class="section">
+    <p>
+     My personal information
+    </p>
+</div>
+<hr color="#">
+<div class="section">
+<div class="section_title"><p id="pubs">Publications  </p></div>
+<div id="includepubs"></div>
+</div>
+<!-- content end -->
+</div>
+</body>
