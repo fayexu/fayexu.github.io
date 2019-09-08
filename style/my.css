@@ -1,6 +1,6 @@
 div#wrapper {
 	margin: auto;
-	width: 900px;
+	width: 800px;
 }
 
 * {
@@ -17,7 +17,7 @@ p {
 }
 
 a {
-	color: #118c4e;
+	color: #422cd2;
 	text-decoration: none;
 }
 
@@ -56,7 +56,7 @@ div#navbar {
 	font-family: Helvetica, Verdana, Geneva, Arial, sans-serif;
 	height: 2em;
 	padding: 0 1em 0 1em;
-	border-bottom: 2px solid #c1e1a6;
+	border-bottom: 2px solid #2d38ce;
 	list-style: none;
 }
 
@@ -116,7 +116,7 @@ div.section_title {
 }
 
 .author {
-  color: #5b2503;
+  color: #e7d417;
 }
 
 .award {
